@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Page</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "CHANr24") {
+        document.getElementById("message").style.display = "block";
+        document.getElementById("login").style.display = "none";
+      } else {
+        alert("Incorrect BGMI name. Please check your spelling and case.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="login">
+    <h2>Enter your BGMI name (case sensitive)</h2>
+    <input type="password" id="password" />
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+  <div id="message" style="display:none;">
+    <h3></h3>
+    <p>I got selected in the BMO project. Thanks for helping me with my POC.</p>
+    <p>And one more thing, I wanted to play foosball for a long time, so if I come while you're playing, don't think that I came to talk with you. I really want to play.</p>
+    <p>And please don't return this.</p>
+  </div>
+</body>
+</html>
